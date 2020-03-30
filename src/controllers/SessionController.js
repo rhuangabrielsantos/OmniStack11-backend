@@ -13,6 +13,6 @@ module.exports = {
             return response.status(400).json({ 'error' : 'No ORG found with this ID' })
         }
 
-        return response.json(ong.name);
+        return response.json({ name: ong.name});
     }
 }
